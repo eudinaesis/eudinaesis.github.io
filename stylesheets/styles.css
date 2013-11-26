@@ -16,6 +16,10 @@ p, ul, ol, table, pre, dl {
   margin:0 0 20px;
 }
 
+p.footer {
+  visibility: hidden;
+}
+
 h1, h2, h3 {
   line-height:1.1;
 }
@@ -98,7 +102,7 @@ img {
 header {
   width:270px;
   float:left;
-  position:fixed;
+/*  position:fixed; */
 }
 
 header ul {
@@ -180,10 +184,34 @@ footer {
   width:270px;
   float:left;
   position:fixed;
-  bottom:50px;
+  bottom:20px;
 }
 
-@media print, screen and (max-width: 960px) {
+@media print, screen and (max-width: 950px) {
+  .wrapper {
+    width:770px;
+    margin:0 auto;
+  }
+  header {
+    width:240px;
+    float:left;
+    position:fixed; 
+  }
+  section {
+    width:450px;
+    float:right;
+    padding-bottom:50px;
+  }
+  footer {
+    width:270px;
+    float:left;
+    position:fixed;
+    bottom:20px;
+  }
+
+}
+
+@media print, screen and (max-width: 850px) {
   
   div.wrapper {
     width:auto;
@@ -197,7 +225,7 @@ footer {
   }
   
   header {
-    max-width:450px;
+    max-width:350px;
   }
   
   section {
@@ -249,6 +277,15 @@ footer {
   header ul {
     display:none;
   }*/
+}
+
+@media print, screen and (max-height: 700px) and (min-width: 960px){
+  footer {
+    visibility: hidden;
+  }
+  p.footer {
+    visibility: visible;
+  }
 }
 
 @media print {
