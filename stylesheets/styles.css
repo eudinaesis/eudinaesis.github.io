@@ -195,7 +195,6 @@ footer {
   header {
     width:240px;
     float:left;
-    position:fixed; 
   }
   section {
     width:450px;
@@ -279,7 +278,7 @@ footer {
   }*/
 }
 
-@media print, screen and (max-height: 700px) and (min-width: 960px){
+@media print, screen and (max-height: 700px) and (min-width: 850px){
   footer {
     visibility: hidden;
   }
